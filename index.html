@@ -7,27 +7,34 @@
 
     <meta name="description" content="">
 
-    <link rel="icon" sizes="32x32" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/styles/github-markdown.css">
 
-    <link rel="stylesheet" type="text/css" href="/basic_style.css">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+    
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
 
-    <title>FEH Summoning Statistics</title>
+    <title>DTM9025's Online Projects</title>
 
 </head>
 
-<body>
-    <section id="app"></section>
+<body class="markdown-body">
+    This is a landing page for projects hosted online.
 
-    <script src='/pkg/feh_sim_seed.js'></script>
+    <br /><br />
 
-    <script>
-        const { render } = wasm_bindgen;
-
-        wasm_bindgen('/pkg/feh_sim_seed_bg.wasm')
-            .then(render)
-            .catch(console.error);
-    </script>
+    <a href="/fehstatsim/">FEH statistics</a> - A simulator for summoning statistics in Fire Emblem Heroes (<a href="https://github.com/DTM9025/feh-sim-seed">source</a>). Forked from <a href="https://github.com/minno726/feh-sim-seed">minno726</a>.
 
 </body>
 

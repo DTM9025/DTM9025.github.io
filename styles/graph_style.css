@@ -2,11 +2,11 @@ header {
     text-align: end;
 }
 
-body {
+/*body {
     width: 50%;
     height: 90%;
     margin: auto;
-}
+}*/
 
 input.small_number {
     width: 3em;

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+
+    <link rel="icon" sizes="32x32" type="image/png" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/basic_style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+    <title>FEH Summoning Statistics</title>
+
+</head>
+
+<body>
+    <section id="app"></section>
+
+    <script src='/pkg/feh_sim_seed.js'></script>
+
+    <script>
+        const { render } = wasm_bindgen;
+
+        wasm_bindgen('/pkg/feh_sim_seed_bg.wasm')
+            .then(render)
+            .catch(console.error);
+    </script>
+
+</body>
+
+</html>

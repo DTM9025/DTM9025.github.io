@@ -2,6 +2,11 @@ header {
     text-align: end;
 }
 
+body {
+    width: 50%;
+    margin: auto;
+}
+
 input.small_number {
     width: 3em;
 }

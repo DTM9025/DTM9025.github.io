@@ -944,7 +944,7 @@ function init(module) {
             const a = state.a;
             state.a = 0;
             try {
-                return __wbg_adapter_23(a, state.b, arg0);
+                return __wbg_adapter_26(a, state.b, arg0);
             } finally {
                 if (--state.cnt === 0) wasm.__wbindgen_export_2.get(36)(a, state.b);
                 else state.a = a;
@@ -963,7 +963,7 @@ function init(module) {
             const a = state.a;
             state.a = 0;
             try {
-                return __wbg_adapter_26(a, state.b, arg0);
+                return __wbg_adapter_23(a, state.b, arg0);
             } finally {
                 if (--state.cnt === 0) wasm.__wbindgen_export_2.get(36)(a, state.b);
                 else state.a = a;

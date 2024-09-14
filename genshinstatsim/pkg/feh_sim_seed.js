@@ -342,33 +342,6 @@ function init(module) {
     imports.wbg.__wbg_alert_b88bdf4a0e79ff40 = function(arg0, arg1) {
         alert(getStringFromWasm0(arg0, arg1));
     };
-    imports.wbg.__widl_instanceof_PopStateEvent = function(arg0) {
-        var ret = getObject(arg0) instanceof PopStateEvent;
-        return ret;
-    };
-    imports.wbg.__widl_f_state_PopStateEvent = function(arg0) {
-        var ret = getObject(arg0).state;
-        return addHeapObject(ret);
-    };
-    imports.wbg.__wbindgen_string_get = function(arg0, arg1) {
-        const obj = getObject(arg1);
-        var ret = typeof(obj) === 'string' ? obj : undefined;
-        var ptr0 = isLikeNone(ret) ? 0 : passStringToWasm0(ret, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
-        var len0 = WASM_VECTOR_LEN;
-        getInt32Memory0()[arg0 / 4 + 1] = len0;
-        getInt32Memory0()[arg0 / 4 + 0] = ptr0;
-    };
-    imports.wbg.__widl_instanceof_HashChangeEvent = function(arg0) {
-        var ret = getObject(arg0) instanceof HashChangeEvent;
-        return ret;
-    };
-    imports.wbg.__widl_f_new_url_HashChangeEvent = function(arg0, arg1) {
-        var ret = getObject(arg1).newURL;
-        var ptr0 = passStringToWasm0(ret, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
-        var len0 = WASM_VECTOR_LEN;
-        getInt32Memory0()[arg0 / 4 + 1] = len0;
-        getInt32Memory0()[arg0 / 4 + 0] = ptr0;
-    };
     imports.wbg.__widl_f_target_Event = function(arg0) {
         var ret = getObject(arg0).target;
         return isLikeNone(ret) ? 0 : addHeapObject(ret);
@@ -388,63 +361,32 @@ function init(module) {
     imports.wbg.__widl_f_prevent_default_Event = function(arg0) {
         getObject(arg0).preventDefault();
     };
-    imports.wbg.__widl_instanceof_MouseEvent = function(arg0) {
-        var ret = getObject(arg0) instanceof MouseEvent;
+    imports.wbg.__widl_instanceof_HashChangeEvent = function(arg0) {
+        var ret = getObject(arg0) instanceof HashChangeEvent;
         return ret;
     };
-    imports.wbg.__widl_instanceof_SVGSVGElement = function(arg0) {
-        var ret = getObject(arg0) instanceof SVGSVGElement;
+    imports.wbg.__widl_f_new_url_HashChangeEvent = function(arg0, arg1) {
+        var ret = getObject(arg1).newURL;
+        var ptr0 = passStringToWasm0(ret, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        var len0 = WASM_VECTOR_LEN;
+        getInt32Memory0()[arg0 / 4 + 1] = len0;
+        getInt32Memory0()[arg0 / 4 + 0] = ptr0;
+    };
+    imports.wbg.__widl_instanceof_PopStateEvent = function(arg0) {
+        var ret = getObject(arg0) instanceof PopStateEvent;
         return ret;
     };
-    imports.wbg.__widl_f_get_bounding_client_rect_Element = function(arg0) {
-        var ret = getObject(arg0).getBoundingClientRect();
+    imports.wbg.__widl_f_state_PopStateEvent = function(arg0) {
+        var ret = getObject(arg0).state;
         return addHeapObject(ret);
     };
-    imports.wbg.__widl_f_width_DOMRect = function(arg0) {
-        var ret = getObject(arg0).width;
-        return ret;
-    };
-    imports.wbg.__widl_f_offset_x_MouseEvent = function(arg0) {
-        var ret = getObject(arg0).offsetX;
-        return ret;
-    };
-    imports.wbg.__widl_f_request_animation_frame_Window = function(arg0, arg1) {
-        try {
-            var ret = getObject(arg0).requestAnimationFrame(getObject(arg1));
-            return ret;
-        } catch (e) {
-            handleError(e)
-        }
-    };
-    imports.wbg.__widl_f_next_sibling_Node = function(arg0) {
-        var ret = getObject(arg0).nextSibling;
-        return isLikeNone(ret) ? 0 : addHeapObject(ret);
-    };
-    imports.wbg.__widl_f_remove_attribute_Element = function(arg0, arg1, arg2) {
-        try {
-            getObject(arg0).removeAttribute(getStringFromWasm0(arg1, arg2));
-        } catch (e) {
-            handleError(e)
-        }
-    };
-    imports.wbg.__widl_f_set_text_content_Node = function(arg0, arg1, arg2) {
-        getObject(arg0).textContent = arg1 === 0 ? undefined : getStringFromWasm0(arg1, arg2);
-    };
-    imports.wbg.__widl_f_create_text_node_Document = function(arg0, arg1, arg2) {
-        var ret = getObject(arg0).createTextNode(getStringFromWasm0(arg1, arg2));
-        return addHeapObject(ret);
-    };
-    imports.wbg.__widl_instanceof_Node = function(arg0) {
-        var ret = getObject(arg0) instanceof Node;
-        return ret;
-    };
-    imports.wbg.__widl_f_replace_child_Node = function(arg0, arg1, arg2) {
-        try {
-            var ret = getObject(arg0).replaceChild(getObject(arg1), getObject(arg2));
-            return addHeapObject(ret);
-        } catch (e) {
-            handleError(e)
-        }
+    imports.wbg.__wbindgen_string_get = function(arg0, arg1) {
+        const obj = getObject(arg1);
+        var ret = typeof(obj) === 'string' ? obj : undefined;
+        var ptr0 = isLikeNone(ret) ? 0 : passStringToWasm0(ret, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+        var len0 = WASM_VECTOR_LEN;
+        getInt32Memory0()[arg0 / 4 + 1] = len0;
+        getInt32Memory0()[arg0 / 4 + 0] = ptr0;
     };
     imports.wbg.__widl_f_node_type_Node = function(arg0) {
         var ret = getObject(arg0).nodeType;
@@ -479,6 +421,14 @@ function init(module) {
         } catch (e) {
             handleError(e)
         }
+    };
+    imports.wbg.__widl_f_create_text_node_Document = function(arg0, arg1, arg2) {
+        var ret = getObject(arg0).createTextNode(getStringFromWasm0(arg1, arg2));
+        return addHeapObject(ret);
+    };
+    imports.wbg.__widl_instanceof_Node = function(arg0) {
+        var ret = getObject(arg0) instanceof Node;
+        return ret;
     };
     imports.wbg.__widl_f_append_child_Node = function(arg0, arg1) {
         try {
@@ -520,6 +470,26 @@ function init(module) {
         } catch (e) {
             handleError(e)
         }
+    };
+    imports.wbg.__widl_instanceof_MouseEvent = function(arg0) {
+        var ret = getObject(arg0) instanceof MouseEvent;
+        return ret;
+    };
+    imports.wbg.__widl_instanceof_SVGSVGElement = function(arg0) {
+        var ret = getObject(arg0) instanceof SVGSVGElement;
+        return ret;
+    };
+    imports.wbg.__widl_f_get_bounding_client_rect_Element = function(arg0) {
+        var ret = getObject(arg0).getBoundingClientRect();
+        return addHeapObject(ret);
+    };
+    imports.wbg.__widl_f_width_DOMRect = function(arg0) {
+        var ret = getObject(arg0).width;
+        return ret;
+    };
+    imports.wbg.__widl_f_offset_x_MouseEvent = function(arg0) {
+        var ret = getObject(arg0).offsetX;
+        return ret;
     };
     imports.wbg.__widl_f_set_inner_html_Element = function(arg0, arg1, arg2) {
         getObject(arg0).innerHTML = getStringFromWasm0(arg1, arg2);
@@ -567,6 +537,36 @@ function init(module) {
     imports.wbg.__widl_f_remove_event_listener_with_callback_EventTarget = function(arg0, arg1, arg2, arg3) {
         try {
             getObject(arg0).removeEventListener(getStringFromWasm0(arg1, arg2), getObject(arg3));
+        } catch (e) {
+            handleError(e)
+        }
+    };
+    imports.wbg.__widl_f_next_sibling_Node = function(arg0) {
+        var ret = getObject(arg0).nextSibling;
+        return isLikeNone(ret) ? 0 : addHeapObject(ret);
+    };
+    imports.wbg.__widl_f_remove_attribute_Element = function(arg0, arg1, arg2) {
+        try {
+            getObject(arg0).removeAttribute(getStringFromWasm0(arg1, arg2));
+        } catch (e) {
+            handleError(e)
+        }
+    };
+    imports.wbg.__widl_f_set_text_content_Node = function(arg0, arg1, arg2) {
+        getObject(arg0).textContent = arg1 === 0 ? undefined : getStringFromWasm0(arg1, arg2);
+    };
+    imports.wbg.__widl_f_replace_child_Node = function(arg0, arg1, arg2) {
+        try {
+            var ret = getObject(arg0).replaceChild(getObject(arg1), getObject(arg2));
+            return addHeapObject(ret);
+        } catch (e) {
+            handleError(e)
+        }
+    };
+    imports.wbg.__widl_f_request_animation_frame_Window = function(arg0, arg1) {
+        try {
+            var ret = getObject(arg0).requestAnimationFrame(getObject(arg1));
+            return ret;
         } catch (e) {
             handleError(e)
         }
@@ -917,7 +917,7 @@ function init(module) {
         getInt32Memory0()[arg0 / 4 + 1] = len0;
         getInt32Memory0()[arg0 / 4 + 0] = ptr0;
     };
-    imports.wbg.__wbindgen_closure_wrapper386 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper385 = function(arg0, arg1, arg2) {
 
         const state = { a: arg0, b: arg1, cnt: 1 };
         const real = (arg0) => {
@@ -936,7 +936,7 @@ function init(module) {
         var ret = real;
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper776 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper775 = function(arg0, arg1, arg2) {
 
         const state = { a: arg0, b: arg1, cnt: 1 };
         const real = (arg0) => {
@@ -955,7 +955,7 @@ function init(module) {
         var ret = real;
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper316 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper314 = function(arg0, arg1, arg2) {
 
         const state = { a: arg0, b: arg1, cnt: 1 };
         const real = (arg0) => {
